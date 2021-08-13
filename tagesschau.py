@@ -2,6 +2,8 @@ import webbrowser
 import time
 import os
 
+# test
+
 #url = "https://www.tagesschau.de/multimedia/letzte-sendung"
 #url = "https://www.tagesschau.de/sendung/letzte-sendung"
 url = "https://www.tagesschau.de/sendung/tagesschau/"
