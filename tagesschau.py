@@ -24,14 +24,16 @@ time.sleep(20)
 chrome.open(url2, new = 2)
 
 # wait
-time.sleep(300)
+time.sleep(25)
+os.system("espeak 'Get up'")
 
 # start music
 os.system("xdotool key space")
 
 # stop music and start Tagesschau if aufnahmefähig == True
-time.sleep(60)
+time.sleep(300)
 os.system("xdotool key space")
+os.system("espeak 'I said get up for fucks sake'")
 
 # und nun die tagesschau
 firefox.open(url, new = 2)
