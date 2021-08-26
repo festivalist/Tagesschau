@@ -38,7 +38,8 @@ firefox.open(url, new = 2)
 time.sleep(10)
 
 if url.count("yout") > 0:
-        os.system("xdotool key f")else:
+        os.system("xdotool key f")
+else:
     # no youtube no "f" == Fullscreen, so we maximize the browser and check afterwards
     #os.system("xdotool search --onlyvisible --class 'firefox' windowactivate")
     time.sleep(2)
