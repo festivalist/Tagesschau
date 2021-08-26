@@ -15,12 +15,30 @@ firefox = webbrowser.get(using='firefox')
 chrome = webbrowser.get(using='chromium-browser')
 
 time.sleep(20)
+# start the magic
+## new update 
+## firefox.open(url, new = 2)
+## time.sleep(10)
+
+# start spotify
+chrome.open(url2, new = 2)
+
+# wait
+time.sleep(25)
+
+# start music
+os.system("xdotool key space")
+
+# stop music and start Tagesschau if aufnahmefähig == True
+time.sleep(60)
+os.system("xdotool key space")
+
+# und nun die tagesschau
 firefox.open(url, new = 2)
 time.sleep(10)
 
 if url.count("yout") > 0:
-        os.system("xdotool key f")
-else:
+        os.system("xdotool key f")else:
     # no youtube no "f" == Fullscreen, so we maximize the browser and check afterwards
     #os.system("xdotool search --onlyvisible --class 'firefox' windowactivate")
     time.sleep(2)
