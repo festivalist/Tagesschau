@@ -3,7 +3,6 @@ import time
 import os
 
 # test 2
-# test 42
 
 #url = "https://www.tagesschau.de/multimedia/letzte-sendung"
 #url = "https://www.tagesschau.de/sendung/letzte-sendung"
