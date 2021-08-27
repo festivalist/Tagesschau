@@ -26,6 +26,7 @@ chrome.open(url2, new = 2)
 # wait
 time.sleep(25)
 os.system("espeak 'Get up'")
+time.sleep(3)
 
 # start music
 os.system("xdotool key space")
