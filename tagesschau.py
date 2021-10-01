@@ -37,7 +37,8 @@ os.system("xdotool click 1")
 
 # stop music and start Tagesschau if aufnahmefähig == True
 time.sleep(300)
-# os.system("xdotool key space")
+os.system("xdotool key space")
+time.sleep(1)
 os.system("xdotool key Control_L+w")
 time.sleep(2)
 os.system("espeak 'I said get up for fucks sake'")
