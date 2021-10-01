@@ -9,7 +9,8 @@ import os
 url = "https://www.tagesschau.de/sendung/tagesschau/"
 #url = "https://youtu.be/IP5844MsRvA"
 
-url2 = "https://open.spotify.com/playlist/22gmanYjT7U1QdXaBsN8Lx?si=Gn4Xav6HQFSwAKvr5QlOQw&dl_branch=1&nd=1"
+# url2 = "https://open.spotify.com/playlist/22gmanYjT7U1QdXaBsN8Lx?si=Gn4Xav6HQFSwAKvr5QlOQw&dl_branch=1&nd=1"
+url2 = "https://open.spotify.com/playlist/37i9dQZEVXbgZQZIKPaTJO"
 
 firefox = webbrowser.get(using='firefox')
 chrome = webbrowser.get(using='chromium-browser')
@@ -25,15 +26,19 @@ chrome.open(url2, new = 2)
 
 # wait
 time.sleep(25)
-os.system("espeak 'Get up'")
-time.sleep(3)
+# os.system("espeak 'Get up'")
+# time.sleep(3)
 
 # start music
-os.system("xdotool key space")
+# os.system("xdotool key space")
+os.system("xdotool mousemove 300 500")
+time.sleep(1)
+os.system("xdotool click 1") 
 
 # stop music and start Tagesschau if aufnahmefähig == True
 time.sleep(300)
-os.system("xdotool key space")
+# os.system("xdotool key space")
+os.system("xdotool key Control_L+w")
 time.sleep(2)
 os.system("espeak 'I said get up for fucks sake'")
 
