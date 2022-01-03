@@ -86,6 +86,12 @@ else:
         time.sleep(960)
         chrome.open(url2, new = 2)
         time.sleep(25)
-        os.system("xdotool mousemove 900 200")
+        
+        # # Full HD 
+        # os.system("xdotool mousemove 900 200")
+        
+        # UWQHD resolution
+        os.system("xdotool mousemove 1715 1375")
+        
         os.system("xdotool click 1")
-        os.system("xdotool key space")
+        # os.system("xdotool key space")
