@@ -33,7 +33,7 @@ time.sleep(25)
 
 # start music
 # os.system("xdotool key space")
-os.system("xdotool mousemove 300 500")
+os.system("xdotool mousemove 310 560")
 time.sleep(1)
 os.system("xdotool click 1") 
 
