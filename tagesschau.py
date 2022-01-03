@@ -11,7 +11,8 @@ url = "https://www.tagesschau.de/sendung/tagesschau/"
 
 # url2 = "https://open.spotify.com/playlist/22gmanYjT7U1QdXaBsN8Lx?si=Gn4Xav6HQFSwAKvr5QlOQw&dl_branch=1&nd=1"
 # url2 = "https://open.spotify.com/playlist/37i9dQZEVXbgZQZIKPaTJO"
-url2 = "https://open.spotify.com/station/playlist/37i9dQZF1DX6bBjHfdRnza"
+# url2 = "https://open.spotify.com/station/playlist/37i9dQZF1DX6bBjHfdRnza"
+url2 = "https://open.spotify.com/playlist/37i9dQZEVXbgZQZIKPaTJO"
 
 firefox = webbrowser.get(using='firefox')
 chrome = webbrowser.get(using='chromium-browser')
