@@ -62,11 +62,23 @@ else:
         time.sleep(2)
         os.system("xdotool click 1") 
     elif url.count("tagesschau.de") > 0:
-        os.system("xdotool mousemove 950 450")
+        
+        # # full HD resolution
+        # os.system("xdotool mousemove 950 450")
+        
+        # UWQHD resolution
+        os.system("xdotool mousemove 1700 580")
+        
         time.sleep(2)
         os.system("xdotool click 1")
         time.sleep(7)
-        os.system("xdotool mousemove 1050 450")
+        
+        # # Full HD Settings
+        # os.system("xdotool mousemove 1050 450")
+        
+        # UWQHD Settings
+        os.system("xdotool mousemove 1450 500")
+        
         os.system("xdotool click 1")
         os.system("xdotool click 1")
         #time.sleep(3)
