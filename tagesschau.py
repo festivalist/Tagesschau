@@ -18,10 +18,10 @@ url = "https://www.tagesschau.de/sendung/tagesschau/"
 # url2 = "https://open.spotify.com/station/playlist/37i9dQZF1DX6bBjHfdRnza"
 url2 = "https://open.spotify.com/playlist/37i9dQZEVXbgZQZIKPaTJO"
 
-firefox = webbrowser.get(using='firefox')
+# firefox = webbrowser.get(using='firefox')
 chrome = webbrowser.get(using='chromium-browser')
 
-time.sleep(20)
+time.sleep(30)
 # start the magic
 ## new update 
 ## firefox.open(url, new = 2)
@@ -32,7 +32,7 @@ time.sleep(20)
 ## chrome.open(url2, new = 2)
 
 # wait
-time.sleep(25)
+# time.sleep(25)
 # os.system("espeak 'Get up'")
 # time.sleep(3)
 
@@ -69,19 +69,7 @@ else:
         os.system("xdotool mousemove 1112 670")
         time.sleep(2)
         os.system("xdotool click 1") 
-    elif url.count("tagesschau.de") > 0:
-        
-        # # full HD resolution
-        # os.system("xdotool mousemove 950 450")
-        
-        # UWQHD resolution
-        # os.system("xdotool mousemove 1700 580")
-
-        
-        ### time.sleep(2)
-        ### os.system("xdotool click 1")
-        ### time.sleep(7)
-        
+    elif url.count("tagesschau.de") > 0:        
         # # Full HD Settings
         # os.system("xdotool mousemove 1050 450")
         
@@ -89,11 +77,13 @@ else:
         os.system("xdotool mousemove 1450 500")
         
         # mini raspi display mit 800 x 480
-        
-            
+        os.system("xdotool mousemove 225 450")        
+
+        # start video
         os.system("xdotool click 1")
-        os.system("xdotool click 1")
-        #time.sleep(3)
+        time.sleep(3)
+        # maximieren
+        os.system("xdotool key f")
         time.sleep(960)
         chrome.open(url2, new = 2)
         time.sleep(25)
