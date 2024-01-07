@@ -1,13 +1,17 @@
+#!/usr/bin/python3
+# offene Fragen: Shebang erforderlich ? 
+# script executabele machen mit: "chmod  +x tagesschaue.py" <- im richtigen Verzeichnis
+# Job erstellen: "sudo crontab -e"
+# Hier nun folgende Zeile eintippen:
+# ""
+
 import webbrowser
 import time
 import os
 
-# test 2
-
-#url = "https://www.tagesschau.de/multimedia/letzte-sendung"
-#url = "https://www.tagesschau.de/sendung/letzte-sendung"
 url = "https://www.tagesschau.de/sendung/tagesschau/"
-#url = "https://youtu.be/IP5844MsRvA"
+## aktuellerer Link aber der alte geht trotzdem
+## url = "https://www.tagesschau.de/multimedia/sendung/tagesschau_20_uhr"
 
 # url2 = "https://open.spotify.com/playlist/22gmanYjT7U1QdXaBsN8Lx?si=Gn4Xav6HQFSwAKvr5QlOQw&dl_branch=1&nd=1"
 # url2 = "https://open.spotify.com/playlist/37i9dQZEVXbgZQZIKPaTJO"
@@ -24,7 +28,8 @@ time.sleep(20)
 ## time.sleep(10)
 
 # start spotify
-chrome.open(url2, new = 2)
+## kein premium mehr
+## chrome.open(url2, new = 2)
 
 # wait
 time.sleep(25)
@@ -32,22 +37,24 @@ time.sleep(25)
 # time.sleep(3)
 
 # start music
-# os.system("xdotool key space")
-os.system("xdotool mousemove 310 560")
-time.sleep(1)
-os.system("xdotool click 1") 
+## kein premium mehr
+## os.system("xdotool key space")
+## os.system("xdotool mousemove 310 560")
+## time.sleep(1)
+## os.system("xdotool click 1") 
 
 # stop music and start Tagesschau if aufnahmefähig == True
-time.sleep(300)
-os.system("xdotool key space")
-time.sleep(1)
-os.system("xdotool key Control_L+w")
-time.sleep(2)
-os.system("espeak 'I said get up for fucks sake'")
+# time.sleep(300)
+# os.system("xdotool key space")
+# time.sleep(1)
+# os.system("xdotool key Control_L+w")
+# time.sleep(2)
+# os.system("espeak 'I said get up for fucks sake'")
 
 # und nun die tagesschau
-firefox.open(url, new = 2)
-time.sleep(10)
+chrome.open(url, new = 2)
+# firefox.open(url, new = 2)
+time.sleep(25)
 
 if url.count("yout") > 0:
         os.system("xdotool key f")
@@ -68,11 +75,12 @@ else:
         # os.system("xdotool mousemove 950 450")
         
         # UWQHD resolution
-        os.system("xdotool mousemove 1700 580")
+        # os.system("xdotool mousemove 1700 580")
+
         
-        time.sleep(2)
-        os.system("xdotool click 1")
-        time.sleep(7)
+        ### time.sleep(2)
+        ### os.system("xdotool click 1")
+        ### time.sleep(7)
         
         # # Full HD Settings
         # os.system("xdotool mousemove 1050 450")
@@ -80,6 +88,9 @@ else:
         # UWQHD Settings
         os.system("xdotool mousemove 1450 500")
         
+        # mini raspi display mit 800 x 480
+        
+            
         os.system("xdotool click 1")
         os.system("xdotool click 1")
         #time.sleep(3)
