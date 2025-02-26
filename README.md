@@ -1,6 +1,6 @@
 # Tagesschau Wecker HowTO
 
-
+works with Raspberry Pi 4 Raspberry Pi Os Bookworm 64 bit
 
 
 
