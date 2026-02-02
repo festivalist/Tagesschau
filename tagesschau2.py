@@ -31,14 +31,14 @@ time.sleep(20)
 # chrome.open(url, new = 2)
 firefox.open(url, new = 2)
 # webbrowser.open(url, new=2)
-time.sleep(25)
+time.sleep(30)
 
 # mini raspi display mit 800 x 480
 os.system("xdotool mousemove 225 450")        
 
 # start video
 os.system("xdotool click 1")
-time.sleep(3)
+time.sleep(5)
 
 # maximieren
 os.system("xdotool key f")
